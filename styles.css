@@ -1,7 +1,10 @@
 :root {
-  --color-nav: rgb(250, 110, 91);
+  --color-navbar-bg: #1f2937;
   --color-navfont: white;
-  --color-hover: aqua;
+  --color-navbar-hover: #3b82f6;
+  --color-main-bg: #f3f4f6;
+  --color-welcome-section-font: #111827;
+  --color-emphasis: #03327e;
 }
 
 @media query {
@@ -9,7 +12,7 @@
 
 #header {
   position: fixed;
-  background-color: var(--color-nav);
+  background-color: var(--color-navbar-bg);
   padding: 20px 40px;
   display: flex;
   top: 0;
@@ -34,7 +37,7 @@
 }
 
 #navbar a:hover {
-  color: var(--color-hover);
+  color: var(--color-navbar-hover);
 }
 
 body {
@@ -43,7 +46,7 @@ body {
 }
 
 #welcome-section {
-  background-color: blueviolet;
+  background-color: var(--color-main-bg);
   width: 100%;
   display: flex;
   text-align: center;
@@ -53,13 +56,40 @@ body {
   flex-direction: column;
 }
 
-#welcome-section h1,
-#welcome-section p {
+#welcome-section .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#welcome-section .content img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#welcome-section .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+}
+
+#welcome-section .text h1 {
   font-size: 30px;
+  color: var(--color-emphasis);
+}
+
+#welcome-section .text p {
+  font-size: 30px;
+  color: var(--color-welcome-section-font);
+  margin: 0;
 }
 
 #projects {
-  background-color: brown;
+  background-color: var(--color-main-bg);
   width: 100%;
   display: flex;
   min-height: 100vh;
@@ -73,7 +103,7 @@ body {
   font-size: 30px;
 }
 
-#projects #submit {
+#projects .submit {
   text-align: center;
   justify-content: center;
   font-size: 30px;
@@ -81,7 +111,7 @@ body {
 }
 
 #education {
-  background-color: rgb(42, 120, 165);
+  background-color: var(--color-main-bg);
   width: 100%;
   display: flex;
   text-align: center;
