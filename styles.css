@@ -5,9 +5,17 @@
   --color-main-bg: #f3f4f6;
   --color-welcome-section-font: #111827;
   --color-emphasis: #03327e;
+  --color-card-bg: #e0f2fe;
+  --color-card-title: #202b3b;
 }
 
 @media query {
+}
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: "Epunda Slab", serif;
 }
 
 #header {
@@ -38,11 +46,6 @@
 
 #navbar a:hover {
   color: var(--color-navbar-hover);
-}
-
-body {
-  margin: 0;
-  padding-top: 70px;
 }
 
 #welcome-section {
@@ -110,26 +113,7 @@ body {
   display: flex;
 }
 
-#education {
-  background-color: var(--color-main-bg);
-  width: 100%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  min-height: 100vh;
-  scroll-margin-top: 70px;
-}
-
-#project-tile {
-  background-color: rgb(165, 97, 42);
-  width: 100%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  min-height: 100vh;
-  scroll-margin-top: 70px;
-}
-.container {
+.container-project {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -167,4 +151,63 @@ body {
 
 #submit:hover {
   background-color: green;
+}
+
+#education {
+  background-color: var(--color-main-bg);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  scroll-margin-top: 70px;
+}
+#education #bolu-logo {
+  height: 200px;
+  width: 200px;
+}
+#education h1 {
+  margin-top: 10px;
+  color: var(--color-card-title);
+}
+
+#education .container-education {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+#education .grid-education {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#education .card-education {
+  gap: 20px;
+  background-color: var(--color-card-bg);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+#education .card-education .text-education {
+  display: flex;
+  flex-direction: column;
+}
+#education .card-education .text-education ul {
+  list-style-position: inside;
+  text-align: left;
+}
+
+#project-tile {
+  background-color: rgb(165, 97, 42);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  scroll-margin-top: 70px;
 }
