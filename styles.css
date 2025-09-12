@@ -102,7 +102,7 @@ body {
 #projects h1 {
   text-align: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .container-project {
@@ -146,7 +146,6 @@ body {
   gap: 10px;
   justify-content: center;
   background-color: var(--color-small-buttons);
-  color: black;
 }
 .buttons a {
   font-size: 30px;
@@ -163,7 +162,6 @@ body {
   gap: 10px;
   padding: 10px 20px;
   background-color: var(--color-small-buttons);
-  color: black;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -176,6 +174,7 @@ body {
   gap: 10px;
   text-decoration: none;
   transition: inherit;
+  color: black;
 }
 
 .submit:hover {
@@ -231,6 +230,7 @@ body {
 #education h1 {
   margin-top: 10px;
   color: var(--color-card-title);
+  font-size: 25px;
 }
 #education h3 {
   color: var(--color-card-title);
