@@ -8,6 +8,7 @@
   --color-card-bg: #e0f2fe;
   --color-card-title: #202b3b;
   --color-buttons: #2853c9;
+  --color-small-buttons: #f0f0f0;
 }
 
 @media query {
@@ -129,6 +130,9 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid #e7e8eb;
 }
+.card h1 {
+  font-size: 25px;
+}
 .card p {
   color: #627e91;
 }
@@ -141,14 +145,16 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
+  background-color: var(--color-small-buttons);
+  color: black;
 }
 .buttons a {
   font-size: 30px;
 }
 
 #button-img {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
 
 .submit {
@@ -156,7 +162,8 @@ body {
   align-items: center;
   gap: 10px;
   padding: 10px 20px;
-  background-color: white;
+  background-color: var(--color-small-buttons);
+  color: black;
   border-radius: 5px;
   border: none;
   cursor: pointer;
