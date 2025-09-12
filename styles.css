@@ -276,3 +276,33 @@ body {
   min-height: 100vh;
   scroll-margin-top: 70px;
 }
+
+#profile-link > div {
+  text-align: center;
+}
+#project-tile img {
+  height: 25px;
+  width: 25px;
+}
+.last-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.last-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 20px;
+  background-color: var(--color-small-buttons);
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+
+.last-submit:hover {
+  transform: translateY(-5px);
+}
