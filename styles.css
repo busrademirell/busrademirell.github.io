@@ -268,7 +268,8 @@ body {
 }
 
 #project-tile {
-  background-color: rgb(165, 97, 42);
+  padding-top: 40px;
+  background-color: var(--color-main-bg);
   width: 100%;
   display: flex;
   text-align: center;
@@ -276,7 +277,12 @@ body {
   min-height: 100vh;
   scroll-margin-top: 70px;
 }
-
+#project-tile h2 {
+  font-size: 4rem;
+}
+#project-tile p {
+  font-size: 1.5rem;
+}
 #profile-link > div {
   text-align: center;
 }
