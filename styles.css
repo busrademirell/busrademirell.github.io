@@ -7,6 +7,7 @@
   --color-emphasis: #03327e;
   --color-card-bg: #e0f2fe;
   --color-card-title: #202b3b;
+  --color-buttons: #2853c9;
 }
 
 @media query {
@@ -129,7 +130,12 @@ body {
   border: 1px solid #e7e8eb;
 }
 .card p {
-  color: #9fd0f1;
+  color: #627e91;
+}
+.small-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 .buttons {
   display: flex;
@@ -161,13 +167,12 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: red;
   text-decoration: none;
   transition: inherit;
 }
 
 .submit:hover {
-  background-color: #3b82f6;
+  background-color: var(--color-buttons);
   transform: translateY(-5px);
 }
 
@@ -183,7 +188,7 @@ body {
   padding: 15px 0;
   font-size: 1.2rem;
   text-align: center;
-  background-color: #2853c9;
+  background-color: var(--color-navbar-bg);
   color: white;
   border: none;
   border-radius: 8px;
@@ -192,7 +197,7 @@ body {
 }
 
 .submit-second:hover {
-  background-color: #3b82f6;
+  background-color: var(--color-buttons);
 }
 
 .submit-second a {
