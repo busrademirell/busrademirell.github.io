@@ -92,12 +92,9 @@ body {
 }
 
 #projects {
-  background-color: var(--color-main-bg);
-  width: 100%;
-  display: flex;
-  min-height: 100vh;
+  padding-top: 40px;
+  background-color: #fefefe;
   scroll-margin-top: 70px;
-  flex-direction: column;
 }
 
 #projects h1 {
@@ -106,54 +103,106 @@ body {
   font-size: 30px;
 }
 
-#projects .submit {
-  text-align: center;
-  justify-content: center;
-  font-size: 30px;
-  display: flex;
-}
-
 .container-project {
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .grid-project {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  justify-content: center;
 }
 
 .card {
-  background-color: salmon;
-  padding: 30px 20px;
+  background-color: #f9fafb;
+  padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e7e8eb;
+}
+.card p {
+  color: #9fd0f1;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.buttons a {
+  font-size: 30px;
 }
 
-.card:hover {
+#button-img {
+  height: 30px;
+  width: 30px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: red;
+  text-decoration: none;
+  transition: inherit;
+}
+
+.submit:hover {
+  background-color: #3b82f6;
   transform: translateY(-5px);
 }
 
-#submit {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  background-color: white;
-  color: red;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
+.submit:hover a {
+  color: white;
 }
 
-#submit:hover {
-  background-color: green;
+.submit-second {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #2853c9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-second:hover {
+  background-color: #3b82f6;
+}
+
+.submit-second a {
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 
 #education {
+  padding-top: 40px;
   background-color: var(--color-main-bg);
   width: 100%;
   display: flex;
