@@ -312,3 +312,9 @@ body {
 .last-submit:hover {
   transform: translateY(-5px);
 }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--main-gray);
+}
