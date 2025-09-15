@@ -273,14 +273,20 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   scroll-margin-top: 70px;
 }
-#project-tile h2 {
+#project-tile h1 {
   font-size: 4rem;
 }
 #project-tile p {
   font-size: 1.5rem;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 300px;
 }
 #profile-link > div {
   text-align: center;
@@ -312,8 +318,15 @@ body {
   transform: translateY(-5px);
 }
 
-footer {
+#work-together {
   display: flex;
-  justify-content: space-evenly;
-  background: var(--main-gray);
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+#work-together footer {
+  margin-top: auto;
+  text-align: center;
+  background-color: var(--color-navbar-bg);
+  color: var(--color-navfont);
 }
